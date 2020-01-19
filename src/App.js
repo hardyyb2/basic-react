@@ -56,6 +56,7 @@ class App extends Component {
       fontSize: '1.5rem',
       cursor: 'pointer'
     }
+
     let persons = null
     if (this.state.showPersons) {
       persons = (
@@ -71,6 +72,7 @@ class App extends Component {
           ))}
         </div>
       )
+      buttonStyle.backgroundColor = 'red'
     }
     return (
       <div className='App'>
